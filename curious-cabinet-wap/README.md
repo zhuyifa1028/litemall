@@ -26,4 +26,4 @@ npm run lint
 
 ### 自定义配置
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+见 [配置参考](https://cli.vuejs.org/config/)
