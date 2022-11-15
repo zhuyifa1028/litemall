@@ -1,13 +1,13 @@
-package com.example.curious.cabinet.db;
+package com.example.cabinet.db;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CuriousCabinetDbApplication {
+public class CabinetDbApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CuriousCabinetDbApplication.class, args);
+		SpringApplication.run(CabinetDbApplication.class, args);
 	}
 
 }

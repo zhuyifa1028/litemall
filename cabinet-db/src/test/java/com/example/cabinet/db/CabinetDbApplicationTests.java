@@ -1,13 +1,13 @@
-package com.example.curious.cabinet.db;
+package com.example.cabinet.db;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CuriousCabinetDbApplicationTests {
+class CabinetDbApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }
