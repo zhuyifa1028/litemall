@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.generator.config.GlobalConfig;
 import com.baomidou.mybatisplus.generator.config.PackageConfig;
 import org.junit.jupiter.api.Test;
 
-class CabinetDatabaseApplicationTests {
+class DatabaseApplicationTests {
 
     @Test
     void contextLoads() {

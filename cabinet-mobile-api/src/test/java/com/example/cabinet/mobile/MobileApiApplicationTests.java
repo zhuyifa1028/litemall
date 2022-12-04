@@ -1,10 +1,10 @@
-package com.example.cabinet.admin;
+package com.example.cabinet.mobile;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CabinetManageApplicationTests {
+class MobileApiApplicationTests {
 
     @Test
     void contextLoads() {

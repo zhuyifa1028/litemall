@@ -1,13 +1,13 @@
-package com.example.cabinet.admin;
+package com.example.cabinet.manage;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CabinetManageApplication {
+public class ManageApiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CabinetManageApplication.class, args);
+        SpringApplication.run(ManageApiApplication.class, args);
     }
 
 }
