@@ -29,3 +29,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.cab-home {
+  padding-bottom: 52px;
+}
+</style>
