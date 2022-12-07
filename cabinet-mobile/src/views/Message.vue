@@ -2,7 +2,9 @@
   <div class="cab-message">
     <nut-navbar title="消息" :fixed="true" :safe-area-inset-top="true">
       <template v-slot:right>
-        <nut-image src="https://lanhu.oss-cn-beijing.aliyuncs.com/psjm3q50bnhyd0cpp7mvmt9jcos8r045wo2817a3a6-5b9d-4bac-a476-2d3c2d37705c" width="18"></nut-image>
+        <router-link to="/message/start">
+          <nut-image src="https://lanhu.oss-cn-beijing.aliyuncs.com/psjm3q50bnhyd0cpp7mvmt9jcos8r045wo2817a3a6-5b9d-4bac-a476-2d3c2d37705c" width="18"></nut-image>
+        </router-link>
       </template>
     </nut-navbar>
     <nut-grid :column-num="3" :border="false">
