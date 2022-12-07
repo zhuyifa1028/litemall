@@ -1,6 +1,7 @@
 <template>
   <div class="cab-app">
     <Home v-show="tabbarVisible === 0"></Home>
+    <Message v-show="tabbarVisible === 3"></Message>
 
     <nut-tabbar v-model:visible="tabbarVisible" active-color="#FFD339" unactive-color="#595959"
                 :bottom="true" :safeAreaInsetBottom="true">
@@ -17,10 +18,12 @@
 
 <script>
 import Home from '@/views/Home';
+import Message from '@/views/Message';
 
 export default {
   components: {
-    Home
+    Home,
+    Message
   },
   data() {
     return {
