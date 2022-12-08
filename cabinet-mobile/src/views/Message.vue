@@ -13,22 +13,22 @@
       <nut-grid-item text="新粉丝" icon="https://lanhu.oss-cn-beijing.aliyuncs.com/pscto1ow2lnvrkjjidejpypbh8gr8p1ovb5d8c29f1-b109-49ed-a991-db90895b457b" icon-size="40"></nut-grid-item>
     </nut-grid>
     <nut-cell-group>
-      <nut-cell class="cab-message-system" title="系统通知" sub-title="您的好友【兜兜里没糖】发布了新商品..." desc="10:58">
+      <nut-cell class="cab-message-system" title="系统通知" sub-title="您的好友【兜兜里没糖】发布了新商品..." desc="10:58" to="/message/chat">
         <template v-slot:icon>
           <nut-avatar url="https://lanhu.oss-cn-beijing.aliyuncs.com/ps5d18e26edvdbexesu1zvq6cp1rilvcagja536f37e-9736-4dd2-ac41-a6cc3ecfad8f" width="40"></nut-avatar>
         </template>
       </nut-cell>
-      <nut-cell title="兜兜里没糖" sub-title="大佬周末的漫展去吗？" desc="19-11-26">
+      <nut-cell title="兜兜里没糖" sub-title="大佬周末的漫展去吗？" desc="19-11-26" to="/message/chat">
         <template v-slot:icon>
           <nut-avatar url="https://lanhu.oss-cn-beijing.aliyuncs.com/psf136stqhrpmkkva9yhohg859mmmf6cwq3cb5256a-11d9-46c2-89a7-3cd69f18926d" width="40"></nut-avatar>
         </template>
       </nut-cell>
-      <nut-cell title="幻红之月" sub-title="你今天发布的贞德模型是什么时候买的？" desc="19-11-24">
+      <nut-cell title="幻红之月" sub-title="你今天发布的贞德模型是什么时候买的？" desc="19-11-24" to="/message/chat">
         <template v-slot:icon>
           <nut-avatar url="https://lanhu.oss-cn-beijing.aliyuncs.com/ps2qznfvd42l1p3powir50h9qv5qy4w66t9b60a7c5-7c40-4fe6-b1f4-0b6fe2b6f536" width="40"></nut-avatar>
         </template>
       </nut-cell>
-      <nut-cell title="口蘑" sub-title="喷枪借我用用呗？" desc="19-10-29">
+      <nut-cell title="口蘑" sub-title="喷枪借我用用呗？" desc="19-10-29" to="/message/chat">
         <template v-slot:icon>
           <nut-avatar url="https://lanhu.oss-cn-beijing.aliyuncs.com/pslez1a2p2y4psg1sxsw6td56s3146y0c7bf8385c8-debc-4864-9d21-831e05806c58" width="40"></nut-avatar>
         </template>

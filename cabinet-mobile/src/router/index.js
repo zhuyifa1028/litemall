@@ -7,6 +7,11 @@ const routes = [
         component: () => import('@/views/Index.vue')
     },
     {
+        path: '/message/chat',
+        name: 'chatMessage',
+        component: () => import('@/views/Message/Chat')
+    },
+    {
         path: '/message/start',
         name: 'startMessage',
         component: () => import('@/views/Message/Start')
