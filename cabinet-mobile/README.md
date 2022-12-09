@@ -1,29 +1,24 @@
-# 好奇柜移动端
+# cabinet-mobile
 
-## 项目设置
-
+## Project setup
 ```
 npm install
 ```
 
-### 编译和热重载以进行开发
-
+### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### 编译和压缩以用于生产
-
+### Compiles and minifies for production
 ```
 npm run build
 ```
 
-### 整理和修复文件
-
+### Lints and fixes files
 ```
 npm run lint
 ```
 
-### 自定义配置
-
-见 [配置参考](https://cli.vuejs.org/config/)
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
