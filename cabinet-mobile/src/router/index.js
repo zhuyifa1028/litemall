@@ -13,6 +13,11 @@ const routes = [
         component: () => import('../views/Message')
     },
     {
+        path: '/chatting',
+        name: 'chatting',
+        component: () => import('@/views/Message/Chatting')
+    },
+    {
         path: '/start-chatting',
         name: 'startChatting',
         component: () => import('@/views/Message/StartChatting')

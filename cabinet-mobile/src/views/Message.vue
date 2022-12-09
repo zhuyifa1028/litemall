@@ -13,22 +13,22 @@
     </van-grid>
 
     <van-cell-group>
-      <van-cell title="系统通知" value="10:58" label="您的好友【兜兜里没糖】发布了新商品..." center>
+      <van-cell title="系统通知" value="10:58" label="您的好友【兜兜里没糖】发布了新商品..." to="/chatting" center>
         <template #icon>
           <van-icon name="https://lanhu.oss-cn-beijing.aliyuncs.com/ps5d18e26edvdbexesu1zvq6cp1rilvcagja536f37e-9736-4dd2-ac41-a6cc3ecfad8f" size="40"/>
         </template>
       </van-cell>
-      <van-cell title="兜兜里没糖" value="19-11-26" label="大佬周末的漫展去吗？" center>
+      <van-cell title="兜兜里没糖" value="19-11-26" label="大佬周末的漫展去吗？" to="/chatting" center>
         <template #icon>
           <van-icon name="https://lanhu.oss-cn-beijing.aliyuncs.com/psf136stqhrpmkkva9yhohg859mmmf6cwq3cb5256a-11d9-46c2-89a7-3cd69f18926d" size="40"/>
         </template>
       </van-cell>
-      <van-cell title="幻红之月" value="19-11-24" label="你今天发布的贞德模型是什么时候买的？" center>
+      <van-cell title="幻红之月" value="19-11-24" label="你今天发布的贞德模型是什么时候买的？" to="/chatting" center>
         <template #icon>
           <van-icon name="https://lanhu.oss-cn-beijing.aliyuncs.com/pslk3gaw6pbvkiccjk3imxbfgkww9v2w4023c116c-6ca1-4356-9a05-6335d3afaffb" size="40"/>
         </template>
       </van-cell>
-      <van-cell title="口蘑" value="19-10-29" label="喷枪借我用用呗？" center>
+      <van-cell title="口蘑" value="19-10-29" label="喷枪借我用用呗？" to="/chatting" center>
         <template #icon>
           <van-icon name="https://lanhu.oss-cn-beijing.aliyuncs.com/ps3fz697xerz3u66240lso5pol0dtuplds35661d94-4add-4f74-b56b-791e93f9fb39" size="40"/>
         </template>
