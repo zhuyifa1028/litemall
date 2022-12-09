@@ -1,4 +1,4 @@
-# cabinet-mobile
+# 好奇柜移动端
 
 ## Project setup
 ```
