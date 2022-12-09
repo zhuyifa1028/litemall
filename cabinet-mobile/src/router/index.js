@@ -11,7 +11,12 @@ const routes = [
         path: '/message',
         name: 'message',
         component: () => import('../views/Message')
-    }
+    },
+    {
+        path: '/start-chatting',
+        name: 'startChatting',
+        component: () => import('@/views/Message/StartChatting')
+    },
 ]
 
 const router = createRouter({
