@@ -42,6 +42,29 @@
       <van-grid-item icon="https://lanhu.oss-cn-beijing.aliyuncs.com/pso4adp7nxwzkn93trrak5ecpq65gispecd356cf-e764-475c-95dd-24efede7a619" text="预购"/>
     </van-grid>
 
+    <div class="flash-sale">
+      <div class="flash-sale__title">
+        <span>限时</span>
+        <span class="desc">抢购</span>
+        <van-count-down :time="time" format="HH:mm:ss">
+          <template #default="timeData">
+            <span class="block">{{ timeData.hours + timeData.days * 24 }}</span>
+            <span class="colon">:</span>
+            <span class="block">{{ timeData.minutes }}</span>
+            <span class="colon">:</span>
+            <span class="block">{{ timeData.seconds }}</span>
+          </template>
+        </van-count-down>
+      </div>
+      <van-grid :gutter="10">
+        <van-grid-item icon="photo-o" text="文字"/>
+        <van-grid-item icon="photo-o" text="文字"/>
+        <van-grid-item icon="photo-o" text="文字"/>
+        <van-grid-item icon="photo-o" text="文字"/>
+        <van-grid-item icon="photo-o" text="文字"/>
+      </van-grid>
+    </div>
+
     <van-tabbar active-color="#FFAC1C" route placeholder>
       <van-tabbar-item replace to="/">
         <span>社群</span>
@@ -82,7 +105,8 @@ export default {
   name: 'Mall',
   data() {
     return {
-      value: ''
+      value: '',
+      time: (36 * 60 * 60 + 21 * 60 + 40) * 1000
     }
   }
 }
@@ -132,6 +156,46 @@ export default {
   .van-grid-item {
     &__content {
       background: #F8F8F8;
+    }
+  }
+}
+
+.flash-sale {
+
+  &__title {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    color: #262626;
+    font-size: 20px;
+    font-weight: normal;
+
+    .desc {
+      background: linear-gradient(0deg, #FF5050 0%, #FF4963 0%, #FF8D8D 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .van-count-down {
+    display: inline-block;
+    margin-left: 12px;
+
+    .colon {
+      display: inline-block;
+      margin: 0 4px;
+      color: #262626;
+    }
+
+    .block {
+      display: inline-block;
+      width: 18px;
+      color: #fff;
+      font-size: 12px;
+      text-align: center;
+      line-height: 18px;
+      background-color: #262626;
     }
   }
 }
