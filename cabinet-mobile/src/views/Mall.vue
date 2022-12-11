@@ -35,7 +35,7 @@
 
     <!--菜单栏-->
     <van-grid :column-num="5" icon-size="36" :border="false">
-      <van-grid-item icon="https://lanhu.oss-cn-beijing.aliyuncs.com/pspibmsg7wzsdubq9eytnqs9u8vsskomnxd4e4114e5-deff-4145-a196-f88f60075f1b" text="全部分类"/>
+      <van-grid-item text="全部分类" icon="https://lanhu.oss-cn-beijing.aliyuncs.com/pspibmsg7wzsdubq9eytnqs9u8vsskomnxd4e4114e5-deff-4145-a196-f88f60075f1b" to="/item_category"/>
       <van-grid-item icon="https://lanhu.oss-cn-beijing.aliyuncs.com/psjmjgktgvulmzjn2lwhxh3r86rgx9j6cbd040bf7f-65ce-4b08-9b45-ec0c3472b21d" text="拍卖"/>
       <van-grid-item icon="https://lanhu.oss-cn-beijing.aliyuncs.com/ps0gb9ssm3kshut92gvrfxaritqj281s26pm64c1e2f7-c1d7-471a-9acb-15a1e5341d36" text="官方优选"/>
       <van-grid-item icon="https://lanhu.oss-cn-beijing.aliyuncs.com/psjup6099lg6d3xq0eww7e7t05cxiw478f1c994c2-fc02-4e51-86d7-fcc158475443" text="拼购"/>
