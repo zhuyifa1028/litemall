@@ -37,7 +37,7 @@
         <div class="van-grid-group">
           <div class="van-grid-group__title">手办玩具</div>
           <van-grid :column-num="3" :border="false">
-            <van-grid-item text="GSC手办" icon="https://lanhu.oss-cn-beijing.aliyuncs.com/psk4tuojai8xm8m15l4hejua7f6a8pmlzt4a7c0196d-5de6-4af2-be04-4b821ae76058"/>
+            <van-grid-item text="GSC手办" icon="https://lanhu.oss-cn-beijing.aliyuncs.com/psk4tuojai8xm8m15l4hejua7f6a8pmlzt4a7c0196d-5de6-4af2-be04-4b821ae76058" to="/item_list"/>
             <van-grid-item text="Phat!" icon="https://lanhu.oss-cn-beijing.aliyuncs.com/psewjhr3rt9bhszdgn70105k802std6brc78586833e-99ba-439b-b18a-e76ab8a470a5"/>
             <van-grid-item text="ANIPLEX+" icon="https://lanhu.oss-cn-beijing.aliyuncs.com/ps14htdpjjq3rcp1hg1af8xehequajk9x8vf4e0953f-c720-4d52-b17d-c2901e64e54f"/>
             <van-grid-item text="万代手办" icon="https://lanhu.oss-cn-beijing.aliyuncs.com/psp2jfd481beaa0gcwj1kfqglnvbxnej485c1067b-3cee-43cd-a633-3ab67fa87fd6"/>
