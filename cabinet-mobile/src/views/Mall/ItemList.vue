@@ -57,7 +57,7 @@
       <!--列表-->
       <van-list v-model:loading="loading" :finished="finished" finished-text="没有更多了" @load="onLoad">
         <!--商品-->
-        <van-card v-for="item in list" :key="item" :thumb="item.thumb" :title="item.title" :desc="item.desc" :price="item.price">
+        <van-card v-for="item in list" :key="item" :thumb="item.thumb" :title="item.title" :desc="item.desc" :price="item.price" @click="$router.push('/item_detail')" :origin-price="100">
           <template #num>
             <van-icon name="https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/9ad9cbc2c0d449cf95674823a28d528f_mergeImage.png" size="26"/>
           </template>

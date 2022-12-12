@@ -23,6 +23,11 @@ const routes = [
         component: () => import('../views/Mall/ItemList')
     },
     {
+        path: '/item_detail',
+        name: 'itemDetail',
+        component: () => import('../views/Mall/ItemDetail')
+    },
+    {
         path: '/message',
         name: 'message',
         component: () => import('../views/Message')
