@@ -1,6 +1,6 @@
 package com.example.cabinet.database.repository.item;
 
-import com.example.cabinet.database.entity.item.WisItemCategory;
+import com.example.cabinet.database.entity.item.CabItemCategory;
 import com.example.cabinet.database.repository.BaseRepository;
 
 /**
@@ -8,6 +8,6 @@ import com.example.cabinet.database.repository.BaseRepository;
  *
  * @author zhuyifa
  */
-public interface WisItemCategoryRepository extends BaseRepository<WisItemCategory, String> {
+public interface CabItemCategoryRepository extends BaseRepository<CabItemCategory, String> {
 
 }

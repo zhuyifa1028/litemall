@@ -1,6 +1,5 @@
 package com.example.cabinet.database.entity;
 
-import cn.hutool.core.util.ObjectUtil;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 import org.springframework.data.annotation.CreatedBy;
@@ -13,6 +12,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 /**
  * 基础 Entity
@@ -30,20 +30,24 @@ public class BaseEntity<ID extends Serializable> implements Persistable<ID> {
     private ID id;
 
     @CreatedBy
+    @Column(updatable = false)
     private String createdBy;
 
     @CreatedDate
+    @Column(updatable = false)
     private LocalDateTime createdDate;
 
     @LastModifiedBy
+    @Column(insertable = false)
     private String lastModifiedBy;
 
     @LastModifiedDate
+    @Column(insertable = false)
     private LocalDateTime lastModifiedDate;
 
     @Override
     public boolean isNew() {
-        return ObjectUtil.isNull(id);
+        return Objects.isNull(id);
     }
 
 }

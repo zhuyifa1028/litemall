@@ -3,7 +3,6 @@ package com.example.cabinet.database.entity.item;
 import com.example.cabinet.database.entity.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
@@ -14,11 +13,10 @@ import javax.persistence.Table;
  * @author zhuyifa
  */
 @Entity
-@Table(name = "wis_item_category")
+@Table(name = "cab_item_category")
 @Data
-@NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class WisItemCategory extends BaseEntity<String> {
+public class CabItemCategory extends BaseEntity<String> {
 
     /**
      * 上级id
