@@ -2,6 +2,7 @@ package com.example.cabinet.database.entity;
 
 import cn.hutool.core.util.ObjectUtil;
 import lombok.Data;
+import org.hibernate.annotations.GenericGenerator;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
@@ -9,23 +10,22 @@ import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.domain.Persistable;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import javax.persistence.EntityListeners;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
-import javax.persistence.Transient;
+import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 /**
- * 审计功能抽象类
+ * 基础 Entity
  *
  * @author zhuyifa
  */
 @Data
 @MappedSuperclass
 @EntityListeners(value = AuditingEntityListener.class)
-public abstract class JpaEntity<ID extends Serializable> implements Persistable<ID> {
+public class BaseEntity<ID extends Serializable> implements Persistable<ID> {
 
+    @GenericGenerator(name = "snowflakeId", strategy = "com.example.cabinet.database.entity.IdentifierGeneratorImpl")
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "snowflakeId")
     @Id
     private ID id;
 
@@ -33,15 +33,14 @@ public abstract class JpaEntity<ID extends Serializable> implements Persistable<
     private String createdBy;
 
     @CreatedDate
-    private Date createdDate;
+    private LocalDateTime createdDate;
 
     @LastModifiedBy
     private String lastModifiedBy;
 
     @LastModifiedDate
-    private Date lastModifiedDate;
+    private LocalDateTime lastModifiedDate;
 
-    @Transient
     @Override
     public boolean isNew() {
         return ObjectUtil.isNull(id);

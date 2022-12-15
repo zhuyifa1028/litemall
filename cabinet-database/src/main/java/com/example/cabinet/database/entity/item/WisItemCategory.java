@@ -1,7 +1,6 @@
 package com.example.cabinet.database.entity.item;
 
-import cn.hutool.core.util.IdUtil;
-import com.example.cabinet.database.entity.JpaEntity;
+import com.example.cabinet.database.entity.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -19,7 +18,7 @@ import javax.persistence.Table;
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class WisItemCategory extends JpaEntity<String> {
+public class WisItemCategory extends BaseEntity<String> {
 
     /**
      * 上级id
@@ -33,11 +32,5 @@ public class WisItemCategory extends JpaEntity<String> {
      * 分类图标
      */
     private String icon;
-
-    public WisItemCategory(boolean isNew) {
-        if (isNew) {
-            setId(IdUtil.getSnowflakeNextIdStr());
-        }
-    }
 
 }

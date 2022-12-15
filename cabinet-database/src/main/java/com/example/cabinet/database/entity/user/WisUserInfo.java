@@ -1,7 +1,7 @@
 package com.example.cabinet.database.entity.user;
 
 import cn.hutool.core.util.IdUtil;
-import com.example.cabinet.database.entity.JpaEntity;
+import com.example.cabinet.database.entity.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -19,7 +19,7 @@ import javax.persistence.Table;
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class WisUserInfo extends JpaEntity<String> {
+public class WisUserInfo extends BaseEntity<String> {
 
     /**
      * 用户名称
