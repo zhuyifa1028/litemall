@@ -4,7 +4,7 @@ import com.example.cabinet.database.entity.item.CabItemCategory;
 import com.example.cabinet.database.repository.BaseRepository;
 
 /**
- * 商品分类表 Repository
+ * 商品分类表Repository
  *
  * @author zhuyifa
  */
