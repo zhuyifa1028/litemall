@@ -29,4 +29,12 @@ public class CabItemCategoryServiceImpl implements CabItemCategoryService {
         return cabItemCategoryRepository.findAll();
     }
 
+    /**
+     * 保存分类
+     */
+    @Override
+    public void saveCategory(CabItemCategory category) {
+        cabItemCategoryRepository.save(category);
+    }
+
 }

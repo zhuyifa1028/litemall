@@ -16,4 +16,9 @@ public interface CabItemCategoryService {
      */
     List<CabItemCategory> getCategoryList();
 
+    /**
+     * 保存分类
+     */
+    void saveCategory(CabItemCategory category);
+
 }
