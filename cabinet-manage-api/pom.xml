@@ -3,17 +3,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>com.example</groupId>
-        <artifactId>cabinet</artifactId>
-        <version>1.0.0</version>
-    </parent>
-
     <artifactId>cabinet-manage-api</artifactId>
     <version>1.0.0</version>
 
     <name>cabinet-manage-api</name>
     <description>好奇柜管理端API</description>
+
+    <parent>
+        <groupId>com.example</groupId>
+        <artifactId>cabinet</artifactId>
+        <version>1.0.0</version>
+    </parent>
 
     <properties>
         <java.version>11</java.version>

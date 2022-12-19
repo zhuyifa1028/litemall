@@ -3,13 +3,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.5</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
-
     <groupId>com.example</groupId>
     <artifactId>cabinet</artifactId>
     <version>1.0.0</version>
@@ -18,8 +11,21 @@
     <name>cabinet</name>
     <description>好奇柜</description>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.5</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
     <properties>
         <java.version>11</java.version>
+        <!-- Swagger2增强工具 https://doc.xiaominfo.com -->
+        <knife4j.version>2.0.9</knife4j.version>
+        <!-- 对象转换工具 https://mapstruct.org/ -->
+        <mapstruct.version>1.5.3.Final</mapstruct.version>
+        <!-- Java工具类库 https://hutool.cn -->
+        <hutool.version>5.8.10</hutool.version>
     </properties>
 
     <modules>
@@ -40,6 +46,45 @@
             <scope>runtime</scope>
         </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>cabinet-database</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>cabinet-manage-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>cabinet-mobile-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- Swagger2增强工具 https://doc.xiaominfo.com -->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+            <!-- 对象转换工具 https://mapstruct.org -->
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+            <!-- Java工具类库 https://hutool.cn -->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>

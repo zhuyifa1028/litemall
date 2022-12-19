@@ -17,11 +17,14 @@
 
     <properties>
         <java.version>11</java.version>
-        <!-- 对象转换工具 https://mapstruct.org/ -->
-        <mapstruct.version>1.5.3.Final</mapstruct.version>
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>cabinet-database</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -29,25 +32,15 @@
         </dependency>
 
         <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>cabinet-database</artifactId>
-            <version>1.0.0</version>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
         </dependency>
 
-        <!-- 对象转换工具 https://mapstruct.org/ -->
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
-            <version>${mapstruct.version}</version>
         </dependency>
 
-        <!--引入Knife4j的官方start包,Swagger2基于Springfox2.10.5项目-->
-        <dependency>
-            <groupId>com.github.xiaoymin</groupId>
-            <!--使用Swagger2-->
-            <artifactId>knife4j-spring-boot-starter</artifactId>
-            <version>2.0.9</version>
-        </dependency>
     </dependencies>
 
     <build>
