@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * 商品分类表Service
@@ -34,7 +35,17 @@ public class CabItemCategoryServiceImpl implements CabItemCategoryService {
      */
     @Override
     public void saveCategory(CabItemCategory category) {
-        cabItemCategoryRepository.save(category);
+        Optional<CabItemCategory> optional = cabItemCategoryRepository.findById(category.getPid());
+        optional.ifPresent(parent -> {
+
+            // 新增分类
+            category.setLeaf(true);
+            cabItemCategoryRepository.save(category);
+
+            // 更新父级节点
+            parent.setLeaf(false);
+            cabItemCategoryRepository.saveAndFlush(parent);
+        });
     }
 
 }

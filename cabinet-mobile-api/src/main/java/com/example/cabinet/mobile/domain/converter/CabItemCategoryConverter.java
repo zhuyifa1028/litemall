@@ -1,6 +1,7 @@
 package com.example.cabinet.mobile.domain.converter;
 
 import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.util.BooleanUtil;
 import cn.hutool.core.util.ObjectUtil;
 import com.example.cabinet.database.entity.item.CabItemCategory;
 import com.example.cabinet.mobile.domain.vo.CabItemCategoryVo;
@@ -31,7 +32,10 @@ public interface CabItemCategoryConverter {
                 .filter(item -> ObjectUtil.equals(item.getPid(), pid))
                 .map(item -> {
                     CabItemCategoryVo vo = toCabItemCategoryVo(item);
-                    vo.setList(toCabItemCategoryVo(item.getId(), filterList));
+                    // 不是叶子节点
+                    if (BooleanUtil.isFalse(item.getLeaf())) {
+                        vo.setList(toCabItemCategoryVo(item.getId(), filterList));
+                    }
                     return vo;
                 }).collect(Collectors.toList());
     }

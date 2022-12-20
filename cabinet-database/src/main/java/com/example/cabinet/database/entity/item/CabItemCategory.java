@@ -30,5 +30,9 @@ public class CabItemCategory extends BaseEntity<String> {
      * 分类图标
      */
     private String icon;
+    /**
+     * 是否为叶子节点
+     */
+    private Boolean leaf;
 
 }
