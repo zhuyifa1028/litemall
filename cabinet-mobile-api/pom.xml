@@ -3,17 +3,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>com.example</groupId>
-        <artifactId>cabinet</artifactId>
-        <version>1.0.0</version>
-    </parent>
-
     <artifactId>cabinet-mobile-api</artifactId>
     <version>1.0.0</version>
+    <description>仿小米有品-移动端API模块</description>
 
-    <name>cabinet-mobile-api</name>
-    <description>好奇柜移动端API</description>
+    <parent>
+        <groupId>com.github.litemall</groupId>
+        <artifactId>litemall</artifactId>
+        <version>1.0.0</version>
+    </parent>
 
     <properties>
         <java.version>11</java.version>
@@ -22,7 +20,7 @@
     <dependencies>
 
         <dependency>
-            <groupId>com.example</groupId>
+            <groupId>com.github.litemall</groupId>
             <artifactId>cabinet-database</artifactId>
         </dependency>
 

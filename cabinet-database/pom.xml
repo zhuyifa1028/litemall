@@ -5,13 +5,11 @@
 
     <artifactId>cabinet-database</artifactId>
     <version>1.0.0</version>
-
-    <name>cabinet-database</name>
-    <description>好奇柜数据库</description>
+    <description>仿小米有品-数据库模块</description>
 
     <parent>
-        <groupId>com.example</groupId>
-        <artifactId>cabinet</artifactId>
+        <groupId>com.github.litemall</groupId>
+        <artifactId>litemall</artifactId>
         <version>1.0.0</version>
     </parent>
 
