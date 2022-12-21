@@ -29,7 +29,7 @@
     <modules>
         <module>cabinet-database</module>
         <module>cabinet-manage-api</module>
-        <module>cabinet-mobile-api</module>
+        <module>litemall-api-mobile</module>
     </modules>
 
     <dependencies>
@@ -59,7 +59,7 @@
             </dependency>
             <dependency>
                 <groupId>com.github.litemall</groupId>
-                <artifactId>cabinet-mobile-api</artifactId>
+                <artifactId>litemall-api-mobile</artifactId>
                 <version>${project.version}</version>
             </dependency>
 

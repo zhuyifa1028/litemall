@@ -1,4 +1,4 @@
-package com.example.cabinet.mobile.configuration;
+package com.github.litemall.mobile.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,7 +24,7 @@ public class Knife4jConfiguration {
                 .groupName("用户服务")
                 .select()
                 //这里指定Controller扫描包路径
-                .apis(RequestHandlerSelectors.basePackage("com.example.cabinet.mobile.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.github.litemall.mobile.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

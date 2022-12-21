@@ -1,4 +1,4 @@
-package com.example.cabinet.mobile;
+package com.github.litemall.mobile;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

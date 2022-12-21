@@ -1,9 +1,9 @@
-package com.example.cabinet.mobile;
+package com.github.litemall.mobile;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication(scanBasePackages = {"com.example.cabinet.mobile", "com.example.cabinet.database"})
+@SpringBootApplication(scanBasePackages = {"com.github.litemall.mobile", "com.example.cabinet.database"})
 public class MobileApiApplication {
 
     public static void main(String[] args) {

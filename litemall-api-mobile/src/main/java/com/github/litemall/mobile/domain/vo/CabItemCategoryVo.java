@@ -1,4 +1,4 @@
-package com.example.cabinet.mobile.domain.vo;
+package com.github.litemall.mobile.domain.vo;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
