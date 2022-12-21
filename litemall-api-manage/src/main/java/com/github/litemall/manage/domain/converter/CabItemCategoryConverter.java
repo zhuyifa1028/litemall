@@ -1,7 +1,7 @@
-package com.example.cabinet.manage.domain.converter;
+package com.github.litemall.manage.domain.converter;
 
 import com.example.cabinet.database.entity.item.CabItemCategory;
-import com.example.cabinet.manage.domain.vo.CabItemCategoryVo;
+import com.github.litemall.manage.domain.vo.CabItemCategoryVo;
 import org.mapstruct.Mapper;
 
 /**

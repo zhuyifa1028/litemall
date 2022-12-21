@@ -1,9 +1,9 @@
-package com.example.cabinet.manage.controller;
+package com.github.litemall.manage.controller;
 
 import com.example.cabinet.database.entity.item.CabItemCategory;
 import com.example.cabinet.database.service.item.CabItemCategoryService;
-import com.example.cabinet.manage.domain.converter.CabItemCategoryConverter;
-import com.example.cabinet.manage.domain.vo.CabItemCategoryVo;
+import com.github.litemall.manage.domain.converter.CabItemCategoryConverter;
+import com.github.litemall.manage.domain.vo.CabItemCategoryVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

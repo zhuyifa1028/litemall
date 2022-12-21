@@ -1,4 +1,4 @@
-package com.example.cabinet.manage;
+package com.github.litemall.manage;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

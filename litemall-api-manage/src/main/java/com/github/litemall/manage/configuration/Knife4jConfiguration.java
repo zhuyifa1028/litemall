@@ -1,4 +1,4 @@
-package com.example.cabinet.manage.configuration;
+package com.github.litemall.manage.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
