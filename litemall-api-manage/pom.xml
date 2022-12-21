@@ -5,7 +5,7 @@
 
     <artifactId>litemall-api-manage</artifactId>
     <version>1.0.0</version>
-    <description>仿小米有品-管理端API模块</description>
+    <description>仿小米有品-API管理端模块</description>
 
     <parent>
         <groupId>com.github.litemall</groupId>

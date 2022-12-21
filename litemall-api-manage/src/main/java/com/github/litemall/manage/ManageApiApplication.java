@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication(scanBasePackages = {
-        "com.example.cabinet.manage",
-        "com.example.cabinet.database"
+        "com.github.litemall.manage",
+        "com.github.litemall.common"
 })
 public class ManageApiApplication {
 

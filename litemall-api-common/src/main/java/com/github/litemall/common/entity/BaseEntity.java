@@ -24,7 +24,7 @@ import java.util.Objects;
 @EntityListeners(value = AuditingEntityListener.class)
 public class BaseEntity<ID extends Serializable> implements Persistable<ID> {
 
-    @GenericGenerator(name = "snowflakeId", strategy = "com.example.cabinet.database.entity.IdentifierGeneratorImpl")
+    @GenericGenerator(name = "snowflakeId", strategy = "com.github.litemall.database.entity.IdentifierGeneratorImpl")
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "snowflakeId")
     @Id
     private ID id;

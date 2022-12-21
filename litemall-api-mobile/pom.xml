@@ -5,7 +5,7 @@
 
     <artifactId>litemall-api-mobile</artifactId>
     <version>1.0.0</version>
-    <description>仿小米有品-移动端API模块</description>
+    <description>仿小米有品-API移动端模块</description>
 
     <parent>
         <groupId>com.github.litemall</groupId>
