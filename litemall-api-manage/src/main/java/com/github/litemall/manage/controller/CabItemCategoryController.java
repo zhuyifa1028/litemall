@@ -1,7 +1,7 @@
 package com.github.litemall.manage.controller;
 
-import com.example.cabinet.database.entity.item.CabItemCategory;
-import com.example.cabinet.database.service.item.CabItemCategoryService;
+import com.github.litemall.common.entity.item.CabItemCategory;
+import com.github.litemall.common.service.item.CabItemCategoryService;
 import com.github.litemall.manage.domain.converter.CabItemCategoryConverter;
 import com.github.litemall.manage.domain.vo.CabItemCategoryVo;
 import io.swagger.annotations.Api;

@@ -3,7 +3,7 @@ package com.github.litemall.mobile.domain.converter;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.BooleanUtil;
 import cn.hutool.core.util.ObjectUtil;
-import com.example.cabinet.database.entity.item.CabItemCategory;
+import com.github.litemall.common.entity.item.CabItemCategory;
 import com.github.litemall.mobile.domain.vo.CabItemCategoryVo;
 import org.mapstruct.Mapper;
 

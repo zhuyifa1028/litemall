@@ -27,7 +27,7 @@
     </properties>
 
     <modules>
-        <module>cabinet-database</module>
+        <module>litemall-api-common</module>
         <module>litemall-api-manage</module>
         <module>litemall-api-mobile</module>
     </modules>
@@ -49,7 +49,7 @@
         <dependencies>
             <dependency>
                 <groupId>com.github.litemall</groupId>
-                <artifactId>cabinet-database</artifactId>
+                <artifactId>litemall-api-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>

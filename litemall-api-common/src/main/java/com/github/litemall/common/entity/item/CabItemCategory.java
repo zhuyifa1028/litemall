@@ -1,0 +1,38 @@
+package com.github.litemall.common.entity.item;
+
+import com.github.litemall.common.entity.BaseEntity;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+/**
+ * 商品分类表
+ *
+ * @author zhuyifa
+ */
+@Entity
+@Table(name = "cab_item_category")
+@Data
+@EqualsAndHashCode(callSuper = true)
+public class CabItemCategory extends BaseEntity<String> {
+
+    /**
+     * 上级id
+     */
+    private String pid;
+    /**
+     * 分类名称
+     */
+    private String name;
+    /**
+     * 分类图标
+     */
+    private String icon;
+    /**
+     * 是否为叶子节点
+     */
+    private Boolean leaf;
+
+}
