@@ -1,4 +1,4 @@
-# litemall-page-mobile
+# litemall-vue-mobile
 
 仿小米有品Vue移动端。
 
