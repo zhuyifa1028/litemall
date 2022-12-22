@@ -1,4 +1,4 @@
-# litemall-page-manage
+# litemall-vue-manage
 
 仿小米有品Vue管理端。
 
