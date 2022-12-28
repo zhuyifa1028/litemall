@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 @ApiModel(value = "商品分类表Vo")
 @Data
-public class CabItemCategoryVo implements Serializable {
+public class WisItemCategoryVo implements Serializable {
 
     @ApiModelProperty(value = "上级id")
     private String pid;

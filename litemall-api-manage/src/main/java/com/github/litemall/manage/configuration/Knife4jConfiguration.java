@@ -20,10 +20,8 @@ public class Knife4jConfiguration {
         //指定使用Swagger2规范
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
-                //分组名称
                 .groupName("用户服务")
                 .select()
-                //这里指定Controller扫描包路径
                 .apis(RequestHandlerSelectors.basePackage("com.github.litemall.manage.controller"))
                 .paths(PathSelectors.any())
                 .build();
