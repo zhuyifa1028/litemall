@@ -9,7 +9,7 @@ import java.util.List;
 
 @ApiModel(value = "商品分类表Vo")
 @Data
-public class CabItemCategoryVo implements Serializable {
+public class WisItemCategoryVo implements Serializable {
 
     @ApiModelProperty(value = "分类id")
     private String id;
@@ -21,6 +21,6 @@ public class CabItemCategoryVo implements Serializable {
     private String icon;
 
     @ApiModelProperty(value = "下级列表")
-    private List<CabItemCategoryVo> list;
+    private List<WisItemCategoryVo> list;
 
 }
