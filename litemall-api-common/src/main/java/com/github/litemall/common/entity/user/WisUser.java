@@ -13,10 +13,10 @@ import javax.persistence.Table;
  * @author zhuyifa
  */
 @Entity
-@Table(name = "cab_user")
+@Table(name = "wis_user")
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class CabUser extends BaseEntity<String> {
+public class WisUser extends BaseEntity<String> {
 
     /**
      * 用户名称
