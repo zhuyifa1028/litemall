@@ -13,10 +13,10 @@ import javax.persistence.Table;
  * @author zhuyifa
  */
 @Entity
-@Table(name = "cab_item_category")
+@Table(name = "wis_item_category")
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class CabItemCategory extends BaseEntity<String> {
+public class WisItemCategory extends BaseEntity<String> {
 
     /**
      * 上级id

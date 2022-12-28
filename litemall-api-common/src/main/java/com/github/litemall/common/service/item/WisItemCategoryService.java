@@ -1,6 +1,6 @@
 package com.github.litemall.common.service.item;
 
-import com.github.litemall.common.entity.item.CabItemCategory;
+import com.github.litemall.common.entity.item.WisItemCategory;
 
 import java.util.List;
 
@@ -9,16 +9,16 @@ import java.util.List;
  *
  * @author zhuyifa
  */
-public interface CabItemCategoryService {
+public interface WisItemCategoryService {
 
     /**
      * 获取分类列表
      */
-    List<CabItemCategory> getCategoryList();
+    List<WisItemCategory> getCategoryList();
 
     /**
      * 保存分类
      */
-    void saveCategory(CabItemCategory category);
+    void saveCategory(WisItemCategory category);
 
 }

@@ -1,6 +1,6 @@
 package com.github.litemall.common.repository.item;
 
-import com.github.litemall.common.entity.item.CabItemCategory;
+import com.github.litemall.common.entity.item.WisItemCategory;
 import com.github.litemall.common.repository.BaseRepository;
 
 /**
@@ -8,6 +8,6 @@ import com.github.litemall.common.repository.BaseRepository;
  *
  * @author zhuyifa
  */
-public interface CabItemCategoryRepository extends BaseRepository<CabItemCategory, String> {
+public interface WisItemCategoryRepository extends BaseRepository<WisItemCategory, String> {
 
 }
