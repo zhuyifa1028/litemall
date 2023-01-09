@@ -23,13 +23,21 @@ public class WisItemCategory extends BaseEntity<String> {
      */
     private String pid;
     /**
-     * 分类名称
+     * 类型
+     */
+    private Integer type;
+    /**
+     * 名称
      */
     private String name;
     /**
-     * 分类图标
+     * 图标
      */
     private String icon;
+    /**
+     * 排序
+     */
+    private Integer sort;
     /**
      * 是否为叶子节点
      */

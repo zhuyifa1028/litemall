@@ -15,7 +15,7 @@ public class AuditorAwareImpl implements AuditorAware<String> {
 
     @Override
     public Optional<String> getCurrentAuditor() {
-        return Optional.of("1602662442354245632");
+        return Optional.of("admin");
     }
 
 }
