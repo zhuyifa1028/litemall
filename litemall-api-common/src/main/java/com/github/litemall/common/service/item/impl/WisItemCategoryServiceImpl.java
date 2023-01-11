@@ -27,7 +27,7 @@ public class WisItemCategoryServiceImpl implements WisItemCategoryService {
      */
     @Override
     public List<WisItemCategory> getCategoryList() {
-        return wisItemCategoryRepository.findAll();
+        return wisItemCategoryRepository.findByPidIsNullOrderBySort();
     }
 
     /**

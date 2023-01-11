@@ -2,6 +2,7 @@ package com.github.litemall.mobile.controller;
 
 import com.github.litemall.common.entity.item.WisItemCategory;
 import com.github.litemall.common.service.item.WisItemCategoryService;
+import com.github.litemall.mobile.configuration.biz.BizResponse;
 import com.github.litemall.mobile.domain.converter.WisItemCategoryConverter;
 import com.github.litemall.mobile.domain.vo.WisItemCategoryVo;
 import io.swagger.annotations.Api;
@@ -25,9 +26,9 @@ public class WisItemCategoryController {
 
     @ApiOperation(value = "获取分类列表")
     @GetMapping(value = "/getCategoryList")
-    public List<WisItemCategoryVo> getCategoryList() {
+    public BizResponse<List<WisItemCategoryVo>> getCategoryList() {
         List<WisItemCategory> categoryList = wisItemCategoryService.getCategoryList();
-        return wisItemCategoryConverter.toCabItemCategoryVo("root", categoryList);
+        return BizResponse.ok(wisItemCategoryConverter.toCabItemCategoryVo(categoryList));
     }
 
 }

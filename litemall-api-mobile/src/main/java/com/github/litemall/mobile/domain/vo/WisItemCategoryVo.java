@@ -5,22 +5,21 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
-import java.util.List;
 
 @ApiModel(value = "商品分类表Vo")
 @Data
 public class WisItemCategoryVo implements Serializable {
 
-    @ApiModelProperty(value = "分类id")
+    @ApiModelProperty(value = "主键")
     private String id;
 
-    @ApiModelProperty(value = "分类名称")
+    @ApiModelProperty(value = "名称")
     private String name;
 
-    @ApiModelProperty(value = "分类图标")
-    private String icon;
+    @ApiModelProperty(value = "排序")
+    private Long sort;
 
-    @ApiModelProperty(value = "下级列表")
-    private List<WisItemCategoryVo> list;
+    @ApiModelProperty(value = "类型")
+    private Integer type;
 
 }
