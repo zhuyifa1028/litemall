@@ -1,0 +1,4 @@
+rootProject.name = 'litemall'
+include 'litemall-api-mobile'
+include 'litemall-api-manage'
+include 'litemall-api-common'

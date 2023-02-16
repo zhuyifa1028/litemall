@@ -1,0 +1,9 @@
+jar.enabled = true
+bootJar.enabled = false
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'com.mysql:mysql-connector-j'
+    compileOnly 'org.projectlombok:lombok'
+    implementation 'cn.hutool:hutool-all:5.8.10'
+}

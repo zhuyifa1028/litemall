@@ -1,0 +1,9 @@
+jar.enabled = true
+bootJar.enabled = true
+
+dependencies {
+    implementation project(':litemall-api-common')
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'com.github.xiaoymin:knife4j-spring-boot-starter:2.0.9'
+    implementation 'org.mapstruct:mapstruct:1.5.3.Final'
+}
