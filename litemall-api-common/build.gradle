@@ -1,9 +1,35 @@
-jar.enabled = true
-bootJar.enabled = false
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.0.2'
+    id 'io.spring.dependency-management' version '1.1.0'
+}
+
+group = 'com.github.litemall'
+version = '1.0.0'
+sourceCompatibility = '17'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenLocal()
+    maven {
+        url 'https://maven.aliyun.com/repository/public/'
+    }
+    mavenCentral()
+}
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     runtimeOnly 'com.mysql:mysql-connector-j'
     compileOnly 'org.projectlombok:lombok'
-    implementation 'cn.hutool:hutool-all:5.8.10'
+    annotationProcessor 'org.projectlombok:lombok'
+    implementation 'cn.hutool:hutool-all:5.8.12'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
 }
