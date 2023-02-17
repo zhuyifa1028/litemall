@@ -3,7 +3,7 @@ package com.github.litemall.common.service.item.impl;
 import com.github.litemall.common.entity.item.WisItemCategory;
 import com.github.litemall.common.repository.item.WisItemCategoryRepository;
 import com.github.litemall.common.service.item.WisItemCategoryService;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -19,7 +19,7 @@ import java.util.Optional;
 @Transactional(rollbackFor = Exception.class)
 public class WisItemCategoryServiceImpl implements WisItemCategoryService {
 
-    @Autowired
+    @Resource
     private WisItemCategoryRepository wisItemCategoryRepository;
 
     /**

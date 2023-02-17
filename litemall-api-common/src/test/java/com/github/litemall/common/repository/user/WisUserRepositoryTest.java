@@ -1,18 +1,18 @@
 package com.github.litemall.common.repository.user;
 
 import com.github.litemall.common.entity.user.WisUser;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @SpringBootTest
 class WisUserRepositoryTest {
 
-    @Autowired
+    @Resource
     WisUserRepository wisUserRepository;
 
     static WisUser user = new WisUser();

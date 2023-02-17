@@ -1,11 +1,10 @@
 package com.github.litemall.common.entity.item;
 
 import com.github.litemall.common.entity.BaseEntity;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-
-import javax.persistence.Entity;
-import javax.persistence.Table;
 
 /**
  * 商品分类表
