@@ -1,7 +1,7 @@
 package com.github.litemall.manage.domain.converter;
 
 import com.github.litemall.common.entity.item.WisItemCategory;
-import com.github.litemall.manage.domain.vo.WisItemCategoryVo;
+import com.github.litemall.manage.domain.vo.WisItemCategorySaveVo;
 import org.mapstruct.Mapper;
 
 /**
@@ -10,6 +10,6 @@ import org.mapstruct.Mapper;
 @Mapper(componentModel = "spring")
 public interface WisItemCategoryConverter {
 
-    WisItemCategory toWisItemCategory(WisItemCategoryVo vo);
+    WisItemCategory toWisItemCategory(WisItemCategorySaveVo vo);
 
 }
