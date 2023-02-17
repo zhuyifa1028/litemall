@@ -29,7 +29,7 @@ dependencies {
     runtimeOnly 'com.mysql:mysql-connector-j'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
-    implementation 'cn.hutool:hutool-all:5.8.12'
+    api 'cn.hutool:hutool-all:5.8.12'
 }
 
 tasks.named('test') {

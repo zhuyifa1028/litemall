@@ -1,25 +1,24 @@
 package com.github.litemall.mobile.domain.vo;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 import java.io.Serializable;
 
-@ApiModel(value = "商品分类表Vo")
+@Schema(name = "商品分类表VO")
 @Data
 public class WisItemCategoryVo implements Serializable {
 
-    @ApiModelProperty(value = "主键")
+    @Schema(description = "主键")
     private String id;
 
-    @ApiModelProperty(value = "名称")
+    @Schema(description = "名称")
     private String name;
 
-    @ApiModelProperty(value = "排序")
+    @Schema(description = "排序")
     private Long sort;
 
-    @ApiModelProperty(value = "类型")
+    @Schema(description = "类型")
     private Integer type;
 
 }
