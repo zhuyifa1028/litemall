@@ -8,6 +8,6 @@ import com.github.litemall.common.repository.BaseRepository;
  *
  * @author zhuyifa
  */
-public interface WisUserRepository extends BaseRepository<WisUser, String> {
+public interface WisUserRepository extends BaseRepository<WisUser> {
 
 }

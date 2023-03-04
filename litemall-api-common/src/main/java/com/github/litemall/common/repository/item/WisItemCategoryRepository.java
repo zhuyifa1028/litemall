@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @author zhuyifa
  */
-public interface WisItemCategoryRepository extends BaseRepository<WisItemCategory, String> {
+public interface WisItemCategoryRepository extends BaseRepository<WisItemCategory> {
 
     List<WisItemCategory> findByPidIsNullOrderBySort();
 

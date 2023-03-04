@@ -15,7 +15,7 @@ import java.util.Properties;
 
 @Slf4j
 @Component
-public class IdentifierGeneratorImpl implements IdentifierGenerator {
+public class MyIdentifierGenerator implements IdentifierGenerator {
 
     private String entityName;
 

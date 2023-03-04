@@ -10,24 +10,23 @@ import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.domain.Persistable;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
 /**
- * 基础 Entity
+ * 基础Entity
  *
  * @author zhuyifa
  */
 @Data
 @MappedSuperclass
 @EntityListeners(value = AuditingEntityListener.class)
-public class BaseEntity<ID extends Serializable> implements Persistable<ID> {
+public class BaseEntity implements Persistable<String> {
 
-    @GenericGenerator(name = "snowflakeId", strategy = "com.github.litemall.common.entity.IdentifierGeneratorImpl")
+    @GenericGenerator(name = "snowflakeId", strategy = "com.github.litemall.common.entity.MyIdentifierGenerator")
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "snowflakeId")
     @Id
-    private ID id;
+    private String id;
 
     @CreatedBy
     @Column(updatable = false)
