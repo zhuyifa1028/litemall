@@ -8,3 +8,12 @@ export function getCategoryList(data) {
         data
     })
 }
+
+// 获取分类详情
+export function getCategoryDetail(data) {
+    return request({
+        url: '/mtop/market/cat/detail',
+        method: 'post',
+        data
+    })
+}
