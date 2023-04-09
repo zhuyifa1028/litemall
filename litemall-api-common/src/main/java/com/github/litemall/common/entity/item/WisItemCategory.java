@@ -15,7 +15,7 @@ import lombok.EqualsAndHashCode;
 @Table(name = "wis_item_category")
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class WisItemCategory extends BaseEntity<String> {
+public class WisItemCategory extends BaseEntity {
 
     /**
      * 上级id

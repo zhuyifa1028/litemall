@@ -17,7 +17,7 @@ import lombok.EqualsAndHashCode;
 @Table(name = "wis_user")
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class WisUser extends BaseEntity<String> {
+public class WisUser extends BaseEntity {
 
     /**
      * 用户名称
