@@ -19,6 +19,16 @@ export default [
     ],
   },
   {name: '查询表格', icon: 'table', path: '/list', component: './TableList'},
+  {
+    path: '/system',
+    name: '系统管理',
+    icon: 'crown',
+    access: 'canAdmin',
+    routes: [
+      {path: '/system/dept', name: '部门管理', icon: 'smile', component: './system/dept'},
+      {component: './404'},
+    ],
+  },
   {path: '/', redirect: '/welcome'},
   {component: './404'},
 ];
